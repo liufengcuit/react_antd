@@ -1,0 +1,43 @@
+.main-container {
+    display: flex;
+    .left-menu {
+        height: 100vh;
+        overflow: hidden;
+        border-right: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        .left-menu-top {
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            background: #25979A;;
+            color: #fff;
+        }
+        .left-menu-bottom {
+            .ant-menu{
+                border-right: none;
+            }
+        }
+    }
+    .main-right-content {
+        flex: 1;
+        .main-right-content-header {
+            height: 70px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            .main-menu-fold {
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+        .main-userinfo {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
